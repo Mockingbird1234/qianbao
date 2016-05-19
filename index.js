@@ -5,7 +5,7 @@ var express = require('express'),
     io = require('socket.io').listen(server),
     users = [];
 //specify the html we will use
-app.use('/', express.static(__dirname + '/dianshang'));
+app.use('/', express.static(__dirname + '/qianbaowebsite'));
 //bind the server to the 80 port
 //server.listen(3000);//for local test
 server.listen(process.env.PORT || 3000);//publish to heroku
